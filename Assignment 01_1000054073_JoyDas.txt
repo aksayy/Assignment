@@ -1,0 +1,320 @@
+//task10
+    a) hungry		// valid variable
+    b) 2AB		// not valid variable ; starts with a number
+    c) 312.2		// not valid variable ; starts with a number and special char
+    d) MOBILE		// valid variable
+    e) "Ans"		// not valid variable ; starts with special character
+    f) $30 		// valid ; starts with Dollar sign
+    g) yes/no		// not valid variable ; has special char and reserve words.
+    h) student-id 	// not valid variable ; has special char
+    i) A+3 		// not valid variable ; has special char
+    j) 'x'		// not valid variable ; has special char
+    k) return 		// not valid variable ; used reserved words
+
+//task11
+//task2_1
+public class Assignment2_1
+
+{
+    public static void main (String [] args)
+    {
+        int a=7;
+        System.out.println("The value is : " +a);
+            
+    }
+}
+//The value is : 7 
+
+//task2_2
+public class Assignment2_2
+
+{
+    public static void main (String [] args)
+    {
+        int a=7;
+        int b=9;
+        System.out.println("The summation is : " + (a+b));
+            
+    }
+}
+//The summation is : 16
+    
+//task2_3
+public class Assignment2_3
+
+{
+    public static void main (String [] args)
+    {
+        int a=7;
+        int b=9;
+        System.out.println("The product is : " + (a*b));
+        System.out.println("The division is : " + (a/b));    
+    }
+}
+/*The product is : 63 
+The division is : 1*/ 
+
+//task2_4
+public class Assignment2_4
+
+    *{
+public static void main (String [] args)
+    {
+        double a=7;
+        System.out.println("The value is : " +a);
+            
+    }
+}
+//The value is : 7.0
+    
+    {
+    public static void main (String [] args)
+    {
+        double a=7;
+        double b=9;
+        System.out.println("The summation is : " + (a+b));
+            
+    }
+}
+//The summation is : 16.0*/
+    
+    {
+    public static void main (String [] args)
+    {
+        double a=7;
+        double b=9;
+        System.out.println("The product is : " + (a*b));
+        System.out.println("The division is : " + (a/b));    
+    }
+}
+/*The product is : 63.0 
+The division is : 0.7777777777777778*/
+
+//task2_5
+public class Assignment2_5
+
+    {
+public static void main (String [] args)
+    {
+        int a=7;
+        double b=9;
+        System.out.println("The summation is : " + (a+b));
+        System.out.println("The product is : " + (a*b));
+        System.out.println("The division is : " + (a/b));    
+    }
+}
+/*The summation is : 16.0 
+The product is : 63.0 
+The division is : 0.7777777777777778*/
+
+//task2_6
+public class Assignment2_6
+*{
+    public static void main (String [] args)
+    {
+        String a="7" ;
+        String b="9";
+        String addition = a+b;
+        System.out.println("The addition in String is :" + addition);
+     
+    }
+}
+//The addition in String is :79
+    
+    {
+    public static void main (String [] args)
+    {
+        int a=7 ;
+        String b="9";
+        String addition = a+b;
+        System.out.println("The addition in String is :" + addition);
+     
+    }
+}
+//If the first variable is an integer and the second is String and vice versa the addition will remains same
+
+
+
+
+//task12
+
+public class Assignment12
+{
+    public static void main (String [] args)
+    {
+        int rad = 4;
+        double Circumference = 2*Math.PI*rad ;
+        double area=Math.PI*rad*rad;
+        System.out.printf ("The circumference is : %.2f %n" , Circumference);
+        System.out.printf ("Area of a circle is : %.2f %n" , area);
+    }
+}
+/*The circumference is : 25.13  
+Area of a circle is : 50.27  */
+
+//task13
+
+public class Assignment13
+{
+    public static void main (String [] args)
+    {
+        int integer = 4889;
+        double last_digit = integer%100 ;
+        
+        System.out.printf ("The last 2digits of that number is : %.2f %n" , last_digit);
+        
+    }
+}
+
+//The last 2digits of that number is : 89.00  
+
+//task14
+
+public class Assignment14
+{
+    public static void main (String [] args)
+    {
+        int inch = 1000;
+        double meter = inch*0.0254 ;
+        System.out.printf ("The converstion is : %.2f " , meter);
+        
+    }
+}
+
+//The converstion is : 25.40
+
+
+15)
+//task15a
+
+public class Assignment15a
+{
+    public static void main (String [] args)
+    {
+     
+        int a = 20;
+        int b = 30;
+        int c = a; 
+        a = b;
+        b = c;
+        System.out.println ("a= " +a);
+        System.out.println ("b= " +b);
+         
+    }
+}
+
+/*a= 30 
+b= 20 */
+
+//task15b
+
+public class Assignment15b
+{
+    public static void main (String [] args)
+    {
+ 
+        int a = 20;
+        int b = 30;
+        a=a+b; 
+        b=a-b;
+        a=a-b;
+        System.out.println ("a= " +a);
+        System.out.println ("b= " +b);
+         
+    }
+}
+/*a= 30 
+b= 20 */
+
+//task16
+
+public class Assignment16
+ {
+     public static void main (String [] args)
+     {
+         
+         int minutes = 3456789;
+         int years = minutes / 525600;
+         int pending = minutes % 525600;
+         int days = pending/1440;
+         System.out.println (minutes + " minutes =  "+ years +" years and " + days +" days");
+         
+     }
+ }
+//3456789 minutes =  6 years and 210 days 
+
+//task17
+
+
+public class Assignment17
+    
+{
+    public static void main (String [] args)
+    {
+        int a=2;
+        int b=5;
+        int c=8;
+        int d=(2*b * (c-a)/3) +7;
+        System.out.println("D will be : " + d);
+    }
+}
+//D will be : 27 
+
+//task18
+
+
+public class Assignment18
+{
+    public static void main (String [] args)
+    {
+        int student_id=1000054073;
+        int sid1 = student_id % 10;
+        int sid2 = (student_id % 100)/10 ;
+        System.out.println( sid1 + " " + sid2);
+    }
+}
+
+//3 7 
+
+//task19
+
+public class Assignment19
+{
+    public static void main (String [] args)
+    {
+        int a= 8;
+        int b= 3;
+        int side1 = a/2;
+        double sideall= Math.sqrt(side1 * side1 + b * b);
+        double Circumference = 6*sideall;
+        System.out.println("The Circumference of the Hexagon is : " + Circumference);
+        double area = ((3*Math.sqrt(3))/2)*(sideall*sideall);
+        System.out.printf("The area of the Hexagon is :  %.2f %n " , area);
+    }
+}
+
+/*The Circumference of the Hexagon is : 30.0 
+The area of the Hexagon is :  64.95  */
+
+//task20
+public class Assignment20
+{
+    public static void main (String [] args)
+    {
+	double  a = 4.5;
+	double  b =9.5;
+    	double  c = Math.sqrt((a*a)+(b*b)) ;
+    	System.out.println( "The value of SinA= "+a/c);
+    	System.out.println( "The value of cosA= "+b/c);
+    	System.out.println( "The value of SinB= "+b/c);
+    	System.out.println( "The value of cosB= "+a/c);
+    }
+}
+
+/*The value of SinA= 0.42808634473904467 
+The value of cosA= 0.9037378388935388 
+The value of SinB= 0.9037378388935388 
+The value of cosB= 0.42808634473904467 */
+
+
+
