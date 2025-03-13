@@ -1,0 +1,1029 @@
+//Assignment3_1a
+
+
+public class Assignment3_1a 
+  
+    
+{
+    
+    
+    public static void main (String [] args)
+        
+        
+    {
+        
+        int count_kor = 24;
+        
+        
+        while (count_kor >= -6) 
+            
+        {
+            
+            
+            System.out.print(count_kor + ",");
+            
+            
+            count_kor = count_kor-6;
+            
+            
+        }
+        
+        
+    }
+       
+    
+}
+
+
+//Assignment3_1b
+
+public class Assignment3_1b
+    
+    
+{
+    
+    
+    public static void main(String[] args) 
+        
+        
+    {
+        int man_1 = 18;
+        
+        
+        int man_2 = -27;
+        
+        
+        while (man_1 < 64          &&           man_2 > -62)
+            
+        {
+            
+            
+            System.out.print             (man_1 + ", ");
+            
+            
+            System.out.print             (man_2 + ", ");
+            
+            
+            man_1 = man_1 + 18;
+            
+            
+            man_2 = man_2 - 18;
+            
+                        
+        }
+        
+        
+           System.out.print(man_1+", ");
+           
+           
+           System.out.println(man_2);
+           
+           
+    }
+    
+    
+}
+
+
+//Assignment3_2
+
+import java.util.Scanner;
+
+
+public class Assignment3_2
+    
+    
+    {
+    
+    
+    public static void main(String [] args)
+        
+    {
+        
+        Scanner dao = new Scanner(System.in);
+        
+        
+        System.out.print("n er man dao : ");
+        
+        
+        
+        int n = dao.nextInt();
+        
+        
+        int jog = 0;
+        
+        
+        int count =0;
+        
+        while (count < n)
+            
+            
+        {
+            jog = jog +      dao.nextInt() ;
+            
+            
+            count = count   +   1;
+            
+            
+        }
+        
+        double averagethiya = (double) jog / n;
+        
+        
+        System.out.println("The Jog of " + n + " numbers is  : " + jog);
+        
+        
+        System.out.println("The Gor of " + n + " numbers is  : " + averagethiya);
+        
+        
+    }
+    
+    
+ }
+
+//Assignment3_3
+
+
+public class Assignment3_3   
+    
+     
+{
+     
+    
+    public static void main (String [] args) 
+            
+    { 
+        
+        
+        int n = 600;
+        
+        int sum = 0;
+        
+        for (int i = 1; i <= n; i ++)
+            
+            
+            
+        {
+            
+            if(i%7==0 && i%9==0)
+                
+            {
+                
+                sum =  sum+i;
+                   
+            }
+            
+        }
+        
+         System.out.println("all numbers er jog 7 o 9 dara bhag hole hobe " + sum );
+    }
+    
+    
+}
+
+//Assignment3_4
+
+
+public class Assignment3_4
+    
+    
+{
+    
+    public static void main (String [] args)
+        
+        
+    {
+        int w = 600;
+        
+        
+        int jog = 0;
+        
+        
+        int gonona = 0;
+        
+        
+        while( gonona <= w)
+            
+            
+        {
+            
+            
+            if (gonona % 7 == 0 || gonona % 9 ==0)
+                
+            {
+                jog=jog+gonona; 
+                
+                
+            } 
+            
+            
+            gonona ++ ;
+            
+        }
+        System.out.println(jog);
+        
+    }
+    
+    
+}
+
+
+//Assignment3_5
+
+
+public class Assignment3_5
+    
+    
+{
+    
+    public static void main(String [] args)
+        
+        
+    {
+        
+        int w = 600;
+        
+        
+        int jog = 0;
+        
+        
+        
+        int gonona = 0;
+        
+        while (gonona < w)
+            
+            
+        {
+            if (gonona%7 ==0 || gonona%9 ==0)
+                
+                
+            {
+                if (!(gonona%7 ==0 && gonona%9 ==0))
+                    
+                    
+                    
+                {
+                                  jog += gonona;
+                }
+                
+                
+            }
+            
+            
+            gonona++;
+        }
+        
+        
+        System.out.println(jog);
+        
+        
+    }
+    
+        
+}
+
+
+//Assignment3_6
+
+import java.util.Scanner;
+
+
+public class Assignment3_6
+    
+    
+{
+    
+    public static void main(String [] args)
+        
+        
+    {
+        
+        Scanner mc = new Scanner (System.in);
+        
+        
+        System.out.println("Sonkha dan korun : " );
+        
+        
+        
+        int sonkha = mc.nextInt();
+        
+        
+        int suru = 1;
+        
+        
+        int jog = 0;
+        
+        while (sonkha > 0)
+            
+            
+        {
+            
+            
+           jog = ( int )(jog + (Math.pow(-1,suru))*(Math.pow(sonkha,2))) ;
+           
+           
+           
+           suru++;
+           
+           
+           
+           sonkha --;
+           
+           
+        }
+        
+
+       System.out.println(jog);
+       
+       }
+}
+        
+        
+//Assignment3_7
+
+import java.util.Scanner;
+
+
+public class Assignment3_7
+    
+    
+{
+    
+    public static void main(String [] args)
+        
+        
+    {
+        
+        Scanner mc = new Scanner (System.in);
+        
+        
+        System.out.println("Sonkha dan korun : " );
+        
+        
+        int sonkha = mc.nextInt();
+        
+        
+        for (int gonona = 0; gonona <= sonkha ; gonona++)
+            
+            
+        {
+            if (gonona !=0 && gonona % 5 ==0)
+                
+                
+        
+            {
+                
+                System.out.println(gonona);
+          
+            }
+            
+        }
+        
+    }
+    
+}
+        
+        
+
+//Assignment3_8
+
+import java.util.Scanner;
+
+
+public class Assignment3_8
+    
+    
+{
+    
+    public static void main(String [] args)
+        
+        
+    {
+        
+        Scanner mc = new Scanner (System.in);
+        
+        
+        //System.out.println(" " );
+        
+        
+        int sonkha = 0;
+        
+        while (sonkha >=0)
+            
+            
+        {
+            System.out.println("Sonkha dan korun : ");
+            
+            
+                               sonkha = mc.nextInt();
+             
+                            if    (  sonkha >=0     )
+            {
+                                 System.out.println(sonkha + "^2 = " + (sonkha * sonkha));
+            } 
+                
+                     }
+        
+             }
+}
+
+//Assignment3_9
+
+import java.util.Scanner;
+
+
+public class Assignment3_9
+    
+    
+{
+    
+    public static void main(String [] args)
+        
+        
+    {
+        
+        Scanner mc = new Scanner (System.in);
+        
+        
+        System.out.println("Number ta den sirrr : ");
+        
+        
+        int sonkha = mc.nextInt();
+        
+        int ektavaluehobeerki = 0 ;
+        
+        
+        int ektavaluedbona = 0;
+        
+        
+        
+        for(int gonona = 1;gonona <= sonkha ; gonona++)
+            
+            
+        {
+            
+            
+            System.out.println("Number diben apne? Den taile : " + gonona + " :: ");
+            
+            
+            int arektasonkha = mc.nextInt();
+            
+            if(arektasonkha >=0)
+                
+            {
+                ektavaluehobeerki++;
+                
+            }
+            
+            else
+                
+            {
+                ektavaluedbona++;
+                
+                
+            }
+            }
+        
+        
+        System.out.println(ektavaluehobeerki + "hoitese non-negative");
+        
+        
+        System.out.println(ektavaluedbona + "hoitese negative");
+        
+        
+        }
+}
+
+
+//Assignment3_10
+
+import java.util.Scanner;
+
+
+public class Assignment3_10
+    
+    
+{
+    
+    public static void main(String [] args)
+        
+        
+    {
+        
+        Scanner mc = new Scanner (System.in);
+        
+        
+        System.out.println("Number ta den sirrr : ");
+        
+        
+        int sonkha = mc.nextInt();
+        
+        int bijorjog = 0;
+        
+        System.out.println("Bijor number hoitase : ");
+        
+        for
+            
+            
+            (int gonona = 1, count = 0 ; count < sonkha; 
+             
+             
+             gonona=gonona+2, count ++)
+        {
+            
+            
+          System.out.println(gonona);
+          
+          
+          bijorjog = bijorjog + gonona;
+          
+          
+        }
+        
+        
+        System.out.println(bijorjog);
+    }
+}
+
+//Assignment3_11
+
+import java.util.Scanner;
+
+
+public class Assignment3_11
+    
+    
+{
+    
+    public static void main(String [] args)
+        
+        
+    {
+        
+        Scanner mc = new Scanner (System.in);
+        
+        
+        int jog = 0;
+        
+        
+        for (int gonona = 1 ; gonona <=10 ; gonona ++ )
+            
+            
+        {
+            
+            
+            System.out.print("Gonona gorir " + gonona);
+            
+            
+            int sonkha = mc.nextInt();
+            
+            
+            jog = jog + sonkha;
+            
+            
+            System.out.println(jog);
+            
+            
+        }
+        
+        
+    }
+    
+    
+}
+
+
+//Assignment3_12
+
+import java.util.Scanner;
+
+
+public class Assignment3_12
+    
+    
+{
+    
+    public static void main(String [] args)
+        
+        
+    {
+        
+        Scanner mc = new Scanner (System.in);
+        
+        
+        System.out.println("Number ta den sirrr : ");
+        
+        
+        int sonkha = mc.nextInt();
+        
+        int jog = 0;
+        
+        for(int gonona = 1 ; gonona <= sonkha ; gonona++)
+            
+            
+        {
+            
+            
+            if(sonkha % gonona == 0)
+                
+                
+            {
+                System.out.println(gonona);
+                
+                
+                jog++;
+                
+                
+            }
+            
+            
+        }
+        
+        
+    }
+    
+    
+}
+
+//Assignment3_13
+
+import java.util.Scanner;
+
+
+public class Assignment3_13
+    
+    
+{
+    
+    public static void main(String [] args)
+        
+        
+    {
+        
+        Scanner mc = new Scanner (System.in);
+        
+        
+        System.out.println("Number ta den sirrr : ");
+        
+        
+        int sonkha = mc.nextInt();
+        
+        int jog = 0;
+        
+        if (sonkha == 0)
+            
+            
+        {
+            
+            
+            jog = 1;
+            
+            
+        }
+        
+        
+        else
+            
+            
+        {
+            
+            
+            while(!(sonkha == 0 ))
+                
+                
+            {
+                
+                
+                sonkha = sonkha/10;
+                
+                
+                jog=jog+1 ;
+                
+                
+            }
+            
+            
+        }
+       
+        
+       System.out.println(jog);
+       
+       
+    }
+    
+    
+}
+
+
+//Assignment3_14
+
+import java.util.Scanner;
+
+
+public class Assignment3_14
+    
+    
+{
+    
+    public static void main(String [] args)
+        
+        
+    {
+        
+        Scanner mc = new Scanner (System.in);
+        
+        
+        System.out.println("Number ta den sirrr : ");
+        
+        
+        int sonkha = mc.nextInt();
+        
+        System.out.print("kotha hoitese mama sonkha ulta jabe,so sonkha gula hoilo : ");
+        
+        
+        while (!(sonkha ==0))
+            
+            
+        {
+            
+            
+            int man = sonkha %10;
+            
+            
+            System.out.print(man);
+            
+            
+            sonkha = sonkha / 10;
+            
+            
+            if(!(sonkha ==0))
+                
+                
+            {
+                
+                
+               System.out.print(" ");
+               
+               
+            }
+            
+            
+        }
+        
+        
+    }
+    
+    
+}
+
+//Assignment3_15
+
+import java.util.Scanner;
+
+
+public class Assignment3_15
+   
+    
+{
+    
+    public static void main(String [] args)
+        
+        
+    {
+        
+        Scanner mc = new Scanner (System.in);
+        
+        
+        System.out.println("Number ta den sirrr : ");
+        
+        
+        int sonkha = mc.nextInt();
+        
+        
+        int mathanosto = sonkha ;
+        
+        
+        int polsudirbhai = 1 ;
+        
+        while (mathanosto >=10)
+            
+            
+        {
+            
+            
+            mathanosto = mathanosto / 10;
+            
+            
+            polsudirbhai = polsudirbhai * 10;
+            
+            
+        }
+        
+        
+        System.out.println("nambar hoitese mama : ");
+        
+        
+        while(polsudirbhai >0)
+            
+            
+        {
+            
+            
+            int nambar = sonkha / polsudirbhai;
+            
+            
+            System.out.print (nambar);
+            
+            
+            sonkha = sonkha % polsudirbhai;
+            
+            
+            polsudirbhai = polsudirbhai / 10;
+            
+            
+            if (polsudirbhai > 0)
+                
+                
+            {
+                
+                
+                System.out.print(" ");
+                
+                
+            }
+            
+            
+        }
+        
+        
+        System.out.println("  ");
+        
+        
+    }
+    
+    
+}
+
+
+//Assignment3_16a
+
+import java.util.Scanner;
+
+
+public class Assignment3_16a 
+  
+    
+{
+    
+    
+    public static void main (String [] args)
+        
+        
+    {
+        Scanner mc = new Scanner (System.in);
+        
+        
+        System.out.println("Number Kidhar hein? : ");
+        
+        
+        int sonkha = mc.nextInt();
+        
+        
+        int gonona = 0 ;
+        
+        
+        for (int manhocce = 1 ; manhocce <= sonkha ; manhocce++)
+            
+            
+        {
+             
+            
+            if(sonkha % manhocce ==0)
+                
+                
+            {
+                
+                
+                gonona = gonona+1;
+                
+                
+            }
+            
+        }
+        
+        
+        if(gonona ==2)
+            
+            
+        {
+            
+            System.out.println(sonkha + " hoitese molik sonkha ");
+            
+            
+        }
+        
+        
+        else
+            
+            
+        {
+            
+            
+            System.out.println(sonkha + " hoitese jogik sonkha ");
+            
+            
+        }
+        
+        
+    }
+    
+    
+}
+
+
+//Assignment3_16b
+
+import java.util.Scanner;
+
+
+public class Assignment3_16b
+  
+    
+{
+    
+    
+    public static void main (String [] args)
+        
+        
+    {
+        Scanner mc = new Scanner (System.in);
+        
+        
+        System.out.println("Number Kidhar hein? : ");
+        
+        
+        int sonkha = mc.nextInt();
+        
+        
+        int jog = 0 ;
+        
+        
+        for (int manhocce = 1 ; manhocce < sonkha ; manhocce++)
+            
+            
+        {
+             
+            
+            if(sonkha % manhocce == 0 )
+                
+                
+            {
+                
+                
+                jog = jog + manhocce ;
+                
+                
+            }
+            
+        }
+        
+        
+        if(jog == sonkha )
+            
+            
+        {
+            
+            System.out.println(sonkha + " hoitese juss sonkha ");
+            
+            
+        }
+        
+        
+        else
+            
+            
+        {
+            
+            
+            System.out.println(sonkha + " hoitese funmara sonkha ");
+            
+            
+        }
+        
+        
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
